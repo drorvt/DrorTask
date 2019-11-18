@@ -4,7 +4,7 @@
   vars:
     create_containers: 1
     default_container_name: docker
-    default_container_image: drorvt/whatismyip:1fffea471c333105e40ff09d480ea5c0533cac34
+    default_container_image: drorvt/
     default_container_command: curl 127.0.0.1:8000
 
   tasks:
