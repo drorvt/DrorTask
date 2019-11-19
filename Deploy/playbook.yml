@@ -4,7 +4,7 @@
   vars:
     create_containers: 1
     default_container_name: docker
-    default_container_image: drorvt/
+    default_container_image: drorvt/drortask:05baa046803a2ae3334a6d22bd1436a0c7cf7c67
     default_container_command: curl 127.0.0.1:8000
 
   tasks:
@@ -14,17 +14,6 @@
     - name: Install required system packages
       apt: name={{ item }} state=latest update_cache=yes
       loop: [ 'apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'python3-pip', 'virtualenv', 'python3-setuptools']
-
-    # - name: Add Docker GPG apt Key
-    #   apt_key:
-    #     url: https://download.docker.com/linux/ubuntu/gpg
-    #     state: present
-
-    - name: Add Docker Repository
-      apt_repository:
-        repo: deb https://download.docker.com/linux/ubuntu bionic stable
-        state: present
-
     
     - name: Checking docker on latest version
       apt: name=docker.io state=latest
