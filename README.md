@@ -1,9 +1,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-In this project we create a  continuous integration process using Github, Travis-CI and Docker HUB, the files used here can be found * [HERE](https://github.com/drorvt/drortask/)
-AND
-Deploy docker container from Dockerhub with Vagrant and Ansible
+1. In this project we create a  continuous integration process using Github, Travis-CI and Docker HUB, the files used here can be found * [HERE](https://github.com/drorvt/drortask/)
+
+2. Deploy docker container from Dockerhub with Vagrant and Ansible
 
 
 
@@ -15,15 +15,16 @@ Deploy docker container from Dockerhub with Vagrant and Ansible
 ### Prerequisites
 
 1. We need to install *.[virtualbox](https://www.virtualbox.org/wiki/Downloads) and *.[vagrant](https://www.vagrantup.com/downloads.html) on our local computer to work with vagrant.
-2.Create a public docker repository at dockerhub, to push the docker images 
-3.Setup continous build, use in github Travis CI to build and push the docker image to dockerhub
-4.install virtualbox and vagrant on our local computer to work with vagrant.
+2. Create a public docker repository at dockerhub, to push the docker images 
+3. Setup continous build, use in github Travis CI to build and push the docker image to dockerhub
+4. install virtualbox and vagrant on our local computer to work with vagrant.
 
 
 
 ### Installation Application
 
 We will review the docker file, the app code and the travis-ci file
+
 ## main.go
 first we check for the port to use, then convert it to a number, register the handler for our HTTP function and listen for requests, this code should print our ip address as you would expect by the name.
 
